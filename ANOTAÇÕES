@@ -1,0 +1,232 @@
+PROGRAMAÇÃO
+GERAL:
+    Bookmarks: Ctrl + Alt + K
+    Multi-Cursor: Ctrl + Shift + L
+
+    = (recebe)
+    == (igual)
+    === (testa valor e tipo)
+    var ( variável)
+
+    /* comentário em CSS */
+    <!-- Comentário em html --!>
+    //
+
+    + concatenação
+    window.alert('É um grande prazer em te conhecer, ' + nome +'!')
+
+    pra somar tem que ser (number + number)
+    .prompt retorna string
+
+    <strong> </strong>
+
+    <br/>    linha de baixo
+    document.write ("<br>");    pular linha
+
+    ''  (String)
+
+    0 = Domingo
+    1 = Segunda
+    2 = terça
+    3 = Quarta
+    4 = Quinta
+    5 = Sexta
+    6 = Sábado
+----------------//------------------
+CONVERSÃO:
+    String > Number
+        Number.parseInt(n)   INTEIRO  I (i)  /parseInt
+        Number.parseFloat(n)   COM VÍRGULA
+        Number(n)
+
+    Number > String
+        String(n)
+        n.toString()
+----------------//------------------
+FORMATANDO STRING:
+    var s = 'JavaScript'
+    'Eu estou aprendendo s'  //não vaz interpolação
+    'Eu setou aprendendo ' + s   //usa concatenação
+    `Eu estou aprendendo ${s}`  //usa template string
+
+    var s = 'JavaScript'
+    s.length     //quantos caracteres a string tem
+    s.toUpperCase()   //tudo para 'MAIÚSCULA'
+    s.toLowerCase()   //tudo para 'minúsculas'
+
+    var n1 = 1543.5
+    n1
+    n1.toFixed(2)  '1545.50'
+    n1.toFixed(2).replace('.',',')
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+----------------//------------------
+OPERADORES:
+Aritméticos:
+	+  (soma)
+	-  (diminui)
+	*  (multiplica)
+	/  (divisão real/com vírgula)
+	% (resto da divisão inteira(5 % 2 = 1))
+	** (potência(5 ** 2 = 5² = 25))
+	5 + 3 / 2 = 6.5
+	(5 + 3) / 2 = 4
+    Ordem:
+      |   ( )
+      |  **
+      |   *  /  %   (esquerda pra direita)
+     \/  +  -       (esquerda pra direita)
+Atribuição:
+    Atribuição Simples:
+        var a = 5 + 3   = 8
+        var b = a % 5  = 3
+        var c  = 5 * b ** 2   = 45
+        var d = 10 - a / 2   = 6
+        var e = 6 * 2 / d   = 2
+        var f = b % e + 4 / e   = 1 + 2 = 3
+
+    Auto-Atribuição:
+        var n = 3
+        n = n + 4       n = 7   //  n += 4
+        n = n - 5        n = 2   // n -= 5
+        ...
+
+    Incremento:
+        var x = 5
+        x = x + 1       = 6     // x ++  /  ++n 
+        x = x - 1        = 5     // x --    /   --n
+Relacionais:
+    5 > 2  -> true      (maior)
+    7 < 4  -> false     (menor)
+    8 >= 8 -> true      (maior ou igual)
+    9 <= 7 -> false     (menor ou igual)
+    5 == 5 -> true      (igual)
+    4 != 4 -> false     (ñ igual)
+    Identidade:
+        5 == 5     -> true
+        5 == '5'   -> true    (testa valor, ñ tipo)
+        5 === '5'  -> false   (testa valor e tipo)
+        5 === 5    -> true
+Lógicos:
+    !      (negação) 
+        - Unário 
+            ! true -> false
+            ! false -> true
+    &&     (conjunção)  (e)
+        - Binário
+            true && true   -> true
+            true && false  -> false
+            false && true  -> false
+            false && false  -> false
+    ||     (disjunção)  (ou)
+        -Binário 
+            true || true  ->  true
+            true || false  -> true
+            false || true  -> true
+            false || false  -> false
+    
+    OBS: casos tenham os três em uma mesma expressão, será resolvido na mesma ordem em que eles estão acima.
+    
+    Ex:
+        idade >= 15 && idade <= 17     // a idade está entre 15 e 17?
+        estado == 'RJ' || estado == 'SP'    // o Estado é RJ ou SP?
+        salário > 1500 && sexo != 'M'      // o salário é acima de 1500 e não é homem?
+Ternários:
+    ?
+    :
+    
+    teste ? true : false    
+    |        |       |-> O que vai aocntecer se esse teste lógico for falso
+    |        -> O que vai acontecer se esse teste lógico for verdadeiro
+    -> Teste lógico   // dá verdadeiro ou falso
+    
+    Ex: 
+        média >= 7.0 ? "Aprovado" : "Reprovado"
+----------------//------------------
+DOM:
+    - Modelo de Objeto de documento
+    - Ele fornece uma representação estrutural do documento como uma árvore.
+    Árvore DOM:
+        window
+            - location (localização)
+            - document (documento atual)
+                html
+                    - head (cabeçalho)
+                        meta
+                        title
+                    - body (corpo)
+                        h1
+                        p
+                        p
+                            strong
+                        div
+                    head e body são filhos(child(está abaixo de html)) de html
+                    html é um parente (parent(está acima de head e body))
+            - history (de onde vc veio, pra onde vai)
+    Selecionando:
+        - por Marca:
+            getElementsByTagName()   // + de um obj.
+        - por ID: #
+            getElementById()
+        - por Nome:
+            getElementsByName()
+        - por Classe: .
+            getElementsByClassName()
+        - por Seletor:
+            querySelector()
+            querySelectorAll()
+    Eventos:
+        mouseenter    (quandoo mouse entrar na div)
+        mousemove     (quando o mouse se mover na div)
+        mousedown     (quando o mouse precionar)
+        mouseup       (quando o mouse soltar)   
+        click         (click)
+        mouseout      (quando o mouse sai da div)
+    Funções:
+        function ação(param){
+            (bloco)
+        }
+----------------//------------------
+CONDIÇÃO:
+    if(condição){
+        true
+    }else {
+        false
+    }
+
+    Tipos de Condição:
+        - Condição Simples:
+            if (condição) {
+                true
+            }
+        - Condição Composta:
+            if(condição){
+                true
+            }else {
+                false
+            }
+        - Condições Aninhadas:
+            if (cond1) {
+                //bloco1
+            } else {
+                if (cond2) {
+                    //bloco2
+                }else {
+                    //bloco3
+                }
+            }
+        - Condição Múltipla
+            switch (expressão){
+                case valor 1:
+
+                    break
+                case valor 2:
+
+                    break
+                case valor 3:
+
+                    break
+                defaut:
+
+                    break
+            }
+----------------//------------------

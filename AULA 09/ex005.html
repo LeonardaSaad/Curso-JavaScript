@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background: cornflowerblue;
+            color: white;
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        document.write ("<br>");
+        var p1 = document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerText) //sem negrito
+        document.write ("<br>");
+        document.write ("<br>");
+        window.document.write('Está escrito com negrito: ' + p1.innerHTML)  //com negrito
+        /*
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        var d = document.querySelector('div#msg')
+        d.style.background = 'green'
+    </script>
+</body>
+</html>
