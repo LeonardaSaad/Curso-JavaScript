@@ -231,15 +231,22 @@ CONDIÇÃO:
             }
 ----------------//------------------
 REPETIÇÕES:
-    while (condição) {
-        (Esse bloco só vai acontecer enquanto a condição for verdadeira)
-    } (Chegando nessa chave ele vai voltar para o while e vai testar dnv)
-    (Quando a condição é falsa o fluxo é desviado para o lado de fora)
+    - Enquanto
+        while (condição) {
+            (Esse bloco só vai acontecer enquanto a condição for verdadeira)
+            [COLOCAR C++ PELO AMOR DE DEUS]
+        } (Chegando nessa chave ele vai voltar para o while e vai testar dnv)
+        (Quando a condição é falsa o fluxo é desviado para o lado de fora)
 
-        Exemplo: 
-            function comerPizza() {
-                while (temFatia()){
-                    comerFatia()
-                }
-            } 
+            Exemplo: 
+                function comerPizza() {
+                    while (temFatia()){
+                        comerFatia()
+                    }
+                } 
     
+    - Repetição com teste no final
+        do{
+
+        } while (condição) (repete o bloco se a condição for verdadeira)
+        (condição for falsa ele sai do bloco)
