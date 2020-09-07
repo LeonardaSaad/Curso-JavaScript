@@ -231,7 +231,7 @@ CONDIÇÃO:
             }
 ----------------//------------------
 REPETIÇÕES:
-    - Enquanto
+    - Repetição com teste no começo:
         while (condição) {
             (Esse bloco só vai acontecer enquanto a condição for verdadeira)
             [COLOCAR C++ PELO AMOR DE DEUS]
@@ -245,8 +245,25 @@ REPETIÇÕES:
                     }
                 } 
     
-    - Repetição com teste no final
+    - Repetição com teste no final:
         do{
 
         } while (condição) (repete o bloco se a condição for verdadeira)
         (condição for falsa ele sai do bloco)
+    
+    - Repedição com variável de controle:
+        for(início;teste;incr){     (teste sendo verdadeiro ele executa o bloco)
+
+        }   (bloco sendo executado ele volta para cima) (enquanto ele volta ele faz o incremento e dnv o teste)
+        (teste sendo falso ele sai do bloco e segue o fluxo)
+
+        Exemplo:
+            var c = 1
+            while (c <= 10) {
+                {bloco}
+                c++
+            }
+            -----------------
+            for (var c=1;c<=10;c++) {
+                {bloco}
+            }
