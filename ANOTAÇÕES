@@ -230,3 +230,16 @@ CONDIÇÃO:
                     break
             }
 ----------------//------------------
+REPETIÇÕES:
+    while (condição) {
+        (Esse bloco só vai acontecer enquanto a condição for verdadeira)
+    } (Chegando nessa chave ele vai voltar para o while e vai testar dnv)
+    (Quando a condição é falsa o fluxo é desviado para o lado de fora)
+
+        Exemplo: 
+            function comerPizza() {
+                while (temFatia()){
+                    comerFatia()
+                }
+            } 
+    
