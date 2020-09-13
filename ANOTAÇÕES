@@ -3,9 +3,6 @@ GERAL:
     Bookmarks: Ctrl + Alt + K
     Multi-Cursor: Ctrl + Shift + L
 
-    = (recebe)
-    == (igual)
-    === (testa valor e tipo)
     var ( variável)
 
     /* comentário em CSS */
@@ -95,6 +92,10 @@ Atribuição:
         x = x + 1       = 6     // x ++  /  ++n 
         x = x - 1        = 5     // x --    /   --n
 Relacionais:
+    = (recebe)
+    == (igual)
+    === (testa valor e tipo)
+    
     5 > 2  -> true      (maior)
     7 < 4  -> false     (menor)
     8 >= 8 -> true      (maior ou igual)
