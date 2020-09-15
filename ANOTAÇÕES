@@ -61,38 +61,40 @@ FORMATANDO STRING:
 ----------------//------------------
 OPERADORES:
 Aritméticos:
-	+  (soma)
-	-  (diminui)
-	*  (multiplica)
-	/  (divisão real/com vírgula)
-	% (resto da divisão inteira(5 % 2 = 1))
-	** (potência(5 ** 2 = 5² = 25))
-	5 + 3 / 2 = 6.5
+	+     (soma)
+	-     (diminui)
+	*     (multiplica)
+	/     (divisão real/com vírgula)
+	%     (resto da divisão inteira(5 % 2 = 1))
+	**    (potência(5 ** 2 = 5² = 25))
+	
+    5 + 3 / 2 = 6.5
 	(5 + 3) / 2 = 4
+    
     Ordem:
       |   ( )
-      |  **
-      |   *  /  %   (esquerda pra direita)
-     \/  +  -       (esquerda pra direita)
+      |   **
+      |   *  /  %    (esquerda pra direita)
+     \/   +  -       (esquerda pra direita)
 Atribuição:
     Atribuição Simples:
         var a = 5 + 3   = 8
         var b = a % 5  = 3
-        var c  = 5 * b ** 2   = 45
+        var c = 5 * b ** 2   = 45
         var d = 10 - a / 2   = 6
         var e = 6 * 2 / d   = 2
         var f = b % e + 4 / e   = 1 + 2 = 3
 
     Auto-Atribuição:
         var n = 3
-        n = n + 4       n = 7   //  n += 4
-        n = n - 5        n = 2   // n -= 5
+        n = n + 4     n = 7         (n += 4)
+        n = n - 5     n = 2         (n -= 5)
         ...
 
     Incremento:
         var x = 5
-        x = x + 1       = 6     // x ++  /  ++n 
-        x = x - 1        = 5     // x --    /   --n
+        x = x + 1   = 6             (x ++  /  ++n)
+        x = x - 1   = 5             (x --  /  --n)
 Relacionais:
     = (recebe)
     == (igual)
@@ -110,29 +112,29 @@ Relacionais:
         5 === '5'  -> false   (testa valor e tipo)
         5 === 5    -> true
 Lógicos:
-    !      (negação) 
+    !  (negação) 
         - Unário 
-            ! true -> false
+            ! true  -> false
             ! false -> true
-    &&     (conjunção)  (e)
+    && (conjunção) (e)
         - Binário
             true && true   -> true
             true && false  -> false
             false && true  -> false
-            false && false  -> false
-    ||     (disjunção)  (ou)
+            false && false -> false
+    || (disjunção) (ou)
         -Binário 
-            true || true  ->  true
+            true || true   -> true
             true || false  -> true
             false || true  -> true
-            false || false  -> false
+            false || false -> false
     
     OBS: casos tenham os três em uma mesma expressão, será resolvido na mesma ordem em que eles estão acima.
     
     Ex:
-        idade >= 15 && idade <= 17     // a idade está entre 15 e 17?
-        estado == 'RJ' || estado == 'SP'    // o Estado é RJ ou SP?
-        salário > 1500 && sexo != 'M'      // o salário é acima de 1500 e não é homem?
+        idade >= 15 && idade <= 17               (a idade está entre 15 e 17?)
+        estado == 'RJ' || estado == 'SP'         (o Estado é RJ ou SP?)
+        salário > 1500 && sexo != 'M'            (o salário é acima de 1500 e não é homem?)
 Ternários:
     ?
     :
@@ -299,3 +301,22 @@ VARIÁVEIS COMPOSTAS:
         console.log(num[pos])           (Essa sintaxe do for só funciona para array e objetos)
     }
 ----------------//------------------
+FUNÇÕES:
+    - São ações executadas assim que são chamadas ou em decorrência de algum evento.
+    - Uma função pode receber parâmetros e retornar um resultado.
+
+    function ação(param) {              (param = parâmetro)
+        -                               (ação)
+        return res                      (retorno)
+    }
+    ação(5)                             (chamada)
+
+    Ex:
+        function parimp(n) {
+            if (n%2==0) {
+                return 'par'
+            } else {
+                return 'ímpar'
+            }
+        }
+        let res = parimp(11)
