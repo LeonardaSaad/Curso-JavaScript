@@ -268,3 +268,32 @@ REPETIÇÕES:
             for (var c=1;c<=10;c++) {
 
             }
+----------------//------------------
+VARIÁVEIS COMPOSTAS:
+    - Variáreis Simples: só conseguem armazenar uma valor por vez.
+    - Variáveis Compostas: devem ser capazes de armazenar vários valores em uma mesma estrutura.
+
+    - Variável começa no 0
+    
+    Ex:
+        vaga a = [0,1,2]
+        a= array vetor      0,1,2= índice chave     [] = Elemento       0 = conteúdo valor
+
+    - Array Vetor (Variável) = vetor é uma variável com vários espaços
+    - Elemento = par que agrupa o espaço da memoria, o valor colocado dentro dele e o índice
+    - Índice = números
+    - Conteúdo Valor =
+    
+    - Array é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.
+
+    - let num = [5,8,4]       (definir os valores)
+    - num[3] = 6              (adciona um valor a variável, mas tem que informar o índice que ele vai ter)
+    - num.push(7)             (adciona um valor a variável, não precisa informar o índice)
+    - num.lenght              (fala quantos elementos tem)
+    - num.sort()              (coloca os valores em ordem crescente)
+    - num.indexOf(7)          (acha um valor na Array, caso o número procurado não exista na variável ele informa -1)
+
+    for (let pos in num) {
+        console.log(num[pos])           (Essa sintaxe do for só funciona para array e objetos)
+    }
+
