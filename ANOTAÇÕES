@@ -8,19 +8,18 @@ GERAL:
     /* comentário em CSS */
     <!-- Comentário em html --!>
     //
+    document.write ("<br>");    (<br> pula linha)
 
     + concatenação
-    window.alert('É um grande prazer em te conhecer, ' + nome +'!')
+    window.prompt('')           (retorna como uma string)
+    window.alert('É um grande prazer em te conhecer, ' + nome +'!')         (concatenação)
 
-    pra somar tem que ser (number + number)
-    .prompt retorna string
+    (number + number) para adição
+    (string + string) para concatenação
 
     <strong> </strong>
 
-    <br/>    linha de baixo
-    document.write ("<br>");    pular linha
-
-    ''  (String)
+    ('')   (String)
 
     0 = Domingo
     1 = Segunda
@@ -32,30 +31,33 @@ GERAL:
 ----------------//------------------
 CONVERSÃO:
     String > Number
-        Number.parseInt(n)   INTEIRO  I (i)  /parseInt
-        Number.parseFloat(n)   COM VÍRGULA
-        Number(n)
+        - Number.parseInt(n) ou parseInt(n)             (Conversão de uma String para um número inteiro)
+            Ex: var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        - Number.parseFloat(n)                          (Para número real, com vírgula)
+            Ex: var n2 = Number.parseFloat(window.prompt('Digite um número: '))
+        - Number(n)                                     (Ele converte sozinho para o tipo definido)
 
     Number > String
-        String(n)
-        n.toString()
+        String(n)                   (Converte número para String)
+        n.toString()                (Converte número para String, porém coloca o que vai ser convertido na frente)
 ----------------//------------------
 FORMATANDO STRING:
     var s = 'JavaScript'
-    'Eu estou aprendendo s'  //não vaz interpolação
-    'Eu setou aprendendo ' + s   //usa concatenação
-    `Eu estou aprendendo ${s}`  //usa template string
+    'Eu estou aprendendo s'                 (não vaz interpolação)
+    'Eu setou aprendendo ' + s              (usa concatenação)
+    `Eu estou aprendendo ${s}`              (usa template string)
 
     var s = 'JavaScript'
-    s.length     //quantos caracteres a string tem
-    s.toUpperCase()   //tudo para 'MAIÚSCULA'
-    s.toLowerCase()   //tudo para 'minúsculas'
+    s.length                                (informa quantos caracteres a string tem)
+    s.toUpperCase()                         (coloca tudo em letra 'MAIÚSCULA')
+    s.toLowerCase()                         (coloca tudo em letra 'minúsculas')
 
     var n1 = 1543.5
     n1
-    n1.toFixed(2)  '1545.50'
-    n1.toFixed(2).replace('.',',')
+    n1.toFixed(2) '1545.50'                                                     (Mostra com o número com qunatas casas decimais forem pedidas)
+    n1.toFixed(2).replace('','')                                                (Troca uma coisa por outra)
     n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        // (coloca o símbolo de dinheiro do país informado, no navegador o "." e "," são convertidos automaticamente)
 ----------------//------------------
 OPERADORES:
 Aritméticos:
@@ -296,4 +298,4 @@ VARIÁVEIS COMPOSTAS:
     for (let pos in num) {
         console.log(num[pos])           (Essa sintaxe do for só funciona para array e objetos)
     }
-
+----------------//------------------
