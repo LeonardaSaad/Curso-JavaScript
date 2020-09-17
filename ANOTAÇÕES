@@ -320,3 +320,10 @@ FUNÇÕES:
             }
         }
         let res = parimp(11)
+----------------//------------------
+BÁSICO OBJETO:
+    Object {}
+        Declarar um object é com {}(chaves)
+
+        Ex:
+            let amigo = {nome:'José', sexo:'M', peso: 85.4, engordar(p){}}
